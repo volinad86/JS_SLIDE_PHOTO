@@ -7,4 +7,21 @@ console.log(photos [4])
 //set the variable i where it is the index.
 let i = 0;
 
+//add wiretapping on click
+next.addEventListener('click', () =>{
+    i++;
+    //set conditions IF
+    if (i > photos.length -1){
+i = 0;
+    }
+    document.querySelector('.pictures').src = photos[i];
+})
 
+
+back.addEventListener('click', () => {
+    i--
+        if (i < 0){
+    i = photos.length -1;
+        }
+    document.querySelector('.pictures').src = photos[i];
+    })
